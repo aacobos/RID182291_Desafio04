@@ -1,0 +1,116 @@
+.box-blog { 
+    height: auto;
+    margin-top: 71px;
+    background-color: #EDF7FA;
+}
+
+.card-blog {
+    padding-top: 7px;
+}
+
+.box-blog h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.card {
+    display: flex;
+    
+}
+
+.card-area {
+    width: 400px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 0 25px;
+}
+ 
+.info-blog {
+    display: flex;
+    gap: 50px;
+}
+
+.info-blog p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-area h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 17px;
+}
+
+.box-button {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-button {
+    margin: 30px auto;
+    border: none;
+    background: #FF6464;
+    border-radius: 2px;
+    width: 208px;
+    height: 47px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-button:hover {
+    color: #FF6464;
+    background: #FFFFFF;
+    border: solid 1px;
+    border-color: #FF6464;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-area {
+        max-width: 90%; 
+        padding: 15px;
+    }
+
+    .info-blog {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-button {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .box-blog h2 {
+        font-size: 18px;
+    }
+
+    .card-area h2 {
+        font-size: 22px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .blog-button {
+        width: 180px;
+        height: 40px;
+        font-size: 18px;
+    }
+}

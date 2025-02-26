@@ -1,0 +1,129 @@
+header {
+    background-color: #FFFFFF;
+    padding: 26px 0;
+}
+
+header ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 0 0 70px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #FF6464;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.avatar-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Configurando o botão do menu mobile */
+.button-mobile {
+    border-radius: 18px;
+    width: auto;
+    height: 50px; 
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    background-color: #000000;
+    color: #FFF;
+}
+
+.button-mobile:hover {
+    background-color: #21243D;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav.open {
+        align-items: end;
+        display: flex;
+    }
+    
+    nav {
+        background-color: #1D1D1D;
+        border-left: 10px solid #333;
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        padding: 37px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 40vw;
+        z-index: 1;
+        box-shadow: -50vw 0px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: flex;
+    }
+
+    nav a {
+        border-bottom: 1px solid #FFF;
+        color: #FFF;
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        padding: 12px;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        color: #FFF;
+        cursor: pointer;
+        font-size: 25px;
+        margin: 0 0 12px;
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: #FF6464;
+    }
+}
